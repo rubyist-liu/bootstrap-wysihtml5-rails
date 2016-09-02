@@ -12658,7 +12658,7 @@ wysihtml5.views.View = Base.extend(
     // --------- neword event ---------
     dom.observe(element, "keyup", function(event) {
       var keyCode = event.keyCode;
-      if (keyCode === wysihtml5.SPACE_KEY || keyCode === wysihtml5.ENTER_KEY) {
+      if (keyCode === wysihtml5.ENTER_KEY) {
         that.parent.fire("newword:composer");
       }
     });
